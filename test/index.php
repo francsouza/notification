@@ -10,7 +10,7 @@ require __DIR__ . '/../lib_ext/autoload.php';
 
 use Notification\Email;
 
-$novoEmail = new Email(2, "mail.theconnect.com.br", "francisco@theconnect.com.br", "Vanessa0312", "ssl", '465', "contato@theconnect.com.br", "Equipe The Connect");
-$novoEmail->sendMail("Assunto de Teste", "<p>Corpo da mensagem de <b>teste</b>!</p>", "francisco.ti@morrodopilar.mg.gov.br", "Teste Envio", "fransouza.ti@gmail.com", "Francisco - Mac Os X");
+$novoEmail = new Email(2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls/ssl", 'port (465)', "from@email.com", "From Name");
+$novoEmail->sendMail("Subject", "Content", "reply@email.com", "Reply Name", "address@email", "Address Name");
 
 var_dump($novoEmail);
